@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		F826E7C227AC27F60052209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F826E7C127AC27F60052209D /* AppDelegate.swift */; };
 		F826E7C427AC27F60052209D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F826E7C327AC27F60052209D /* SceneDelegate.swift */; };
-		F826E7C627AC27F60052209D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F826E7C527AC27F60052209D /* ViewController.swift */; };
+		F826E7C627AC27F60052209D /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F826E7C527AC27F60052209D /* ToDoListViewController.swift */; };
 		F826E7C927AC27F60052209D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F826E7C727AC27F60052209D /* Main.storyboard */; };
-		F826E7CC27AC27F60052209D /* To_Do_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F826E7CA27AC27F60052209D /* To_Do_List.xcdatamodeld */; };
 		F826E7CE27AC27F80052209D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F826E7CD27AC27F80052209D /* Assets.xcassets */; };
 		F826E7D127AC27F80052209D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F826E7CF27AC27F80052209D /* LaunchScreen.storyboard */; };
+		F826E7D927AC28250052209D /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F826E7D827AC28250052209D /* CategoryViewController.swift */; };
+		F826E7E427AC2A000052209D /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F826E7E227AC2A000052209D /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F826E7BE27AC27F60052209D /* To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F826E7C127AC27F60052209D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F826E7C327AC27F60052209D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F826E7C527AC27F60052209D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F826E7C527AC27F60052209D /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		F826E7C827AC27F60052209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F826E7CB27AC27F60052209D /* To_Do_List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = To_Do_List.xcdatamodel; sourceTree = "<group>"; };
 		F826E7CD27AC27F80052209D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F826E7D027AC27F80052209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F826E7D227AC27F80052209D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F826E7D827AC28250052209D /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		F826E7E327AC2A000052209D /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +62,23 @@
 			children = (
 				F826E7C127AC27F60052209D /* AppDelegate.swift */,
 				F826E7C327AC27F60052209D /* SceneDelegate.swift */,
-				F826E7C527AC27F60052209D /* ViewController.swift */,
+				F826E7E527AC2A040052209D /* Model */,
+				F826E7C527AC27F60052209D /* ToDoListViewController.swift */,
+				F826E7D827AC28250052209D /* CategoryViewController.swift */,
 				F826E7C727AC27F60052209D /* Main.storyboard */,
 				F826E7CD27AC27F80052209D /* Assets.xcassets */,
 				F826E7CF27AC27F80052209D /* LaunchScreen.storyboard */,
 				F826E7D227AC27F80052209D /* Info.plist */,
-				F826E7CA27AC27F60052209D /* To_Do_List.xcdatamodeld */,
 			);
 			path = "To Do List";
+			sourceTree = "<group>";
+		};
+		F826E7E527AC2A040052209D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F826E7E227AC2A000052209D /* DataModel.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F826E7C627AC27F60052209D /* ViewController.swift in Sources */,
+				F826E7D927AC28250052209D /* CategoryViewController.swift in Sources */,
+				F826E7E427AC2A000052209D /* DataModel.xcdatamodeld in Sources */,
+				F826E7C627AC27F60052209D /* ToDoListViewController.swift in Sources */,
 				F826E7C227AC27F60052209D /* AppDelegate.swift in Sources */,
 				F826E7C427AC27F60052209D /* SceneDelegate.swift in Sources */,
-				F826E7CC27AC27F60052209D /* To_Do_List.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,13 +378,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F826E7CA27AC27F60052209D /* To_Do_List.xcdatamodeld */ = {
+		F826E7E227AC2A000052209D /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F826E7CB27AC27F60052209D /* To_Do_List.xcdatamodel */,
+				F826E7E327AC2A000052209D /* DataModel.xcdatamodel */,
 			);
-			currentVersion = F826E7CB27AC27F60052209D /* To_Do_List.xcdatamodel */;
-			path = To_Do_List.xcdatamodeld;
+			currentVersion = F826E7E327AC2A000052209D /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
